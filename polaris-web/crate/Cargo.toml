@@ -1,0 +1,15 @@
+[package]
+name = "polaris-web"
+version = "0.1.0"
+authors = ["adumbidiot <nathaniel.daniel23@outlook.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+polaris = {path = "../../polaris"}
+
+[dependencies.wasm-bindgen]
+version = "0.2.42"
+features = ["serde-serialize"]
